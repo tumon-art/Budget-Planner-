@@ -1,0 +1,142 @@
+.main {
+    height: auto;
+    overflow: auto;
+}
+
+.container {
+    overflow: hidden;
+    height: 100%;
+    padding: 0 4em 0 4em;
+    margin: 0 0 2em 0;
+    
+}
+
+.container h1 {
+    border-top: 8px solid rgb(0, 114, 207);
+    display: inline-block;
+    padding: 3px 0 0 0 ;
+}
+
+
+/* Budget Status  */
+.budgetStatus {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 
+    repeat(3,minmax(100px,1fr));
+}
+
+.budgetStatus * {
+    width: 70%;
+    padding: 1.4em 1em 1.4em 1em;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px 1px rgb(3 153 255);
+}
+
+.budgetStatus .budget_not_editable {
+    background-color: rgb(194, 216, 224);
+    display: flex;
+    justify-content: space-between;
+}
+
+.budgetStatus .budget_editable{
+    background-color: rgb(194, 216, 224);
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Bugget Edit Input */
+.budget_editable input {
+    display: inline;
+    padding: 3px;
+    border: none;
+    outline: none;
+}
+
+/*  Edit button  */
+.budgetStatus :nth-child(1) button {
+    padding: 3px;
+    color: white;display: inline;
+    width: 40px;
+    border: none;
+    background-color: rgb(23, 95, 228);
+}
+
+.budgetStatus :nth-child(2) {
+    background-color: rgb(116, 206, 121);
+    color: rgb(36, 54, 9);
+    
+}
+.budgetStatus :nth-child(3) {
+    background-color: rgb(104, 151, 196);
+    color: rgb(22, 50, 68);
+    
+}
+
+/* Edit button Hover  */
+
+.budget_not_editable button:hover {
+    opacity: 88%;
+    cursor: pointer;
+}
+
+/* Expenses */
+.container h3 {
+    margin-top: 3em;
+    border-left: 5px solid rgb(0, 114, 207);
+    display: inline-block;
+    padding: 0 0 0 5px;
+}
+
+/* Search Input  */
+.searchInput {
+    padding: 13px;
+    border: none;
+    border-radius: 7px;
+    padding-left: 21px;
+    background-color: lightgray;
+    outline: none;
+    width: 100%;
+    margin: 5px;
+}
+
+.searchInputHold {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 850px) {
+    .budgetStatus * {
+        width: 100px;
+        padding: 1.4em 1em 1.4em 1em;
+    }
+    .container h1 {
+        display: block;
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 540px) {
+    .budgetStatus {
+        display: grid;
+        justify-items: left;
+        grid-template-columns: 
+        repeat(1,minmax(240px,1fr));
+    }
+    .budgetStatus * {
+        
+        width: 90%;
+        padding: 1.4em 1em 1.4em 1em;
+        margin: 5px;
+    }
+    .container {
+        overflow: hidden;
+        height: 100%;
+        padding: 0.5em;
+        
+    }
+    .container h1 {
+        display: block;
+        text-align: center;
+    }
+}

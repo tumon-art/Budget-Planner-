@@ -1,0 +1,47 @@
+.li {
+    border: 0.4px solid grey;
+    border-radius: 7px;
+    padding: 1em;
+    list-style: none;
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.spanHold {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+    align-items: center;
+    padding-right: 2em;
+}
+
+.span {
+    background-color: #0d64e7;
+    color: white;
+    width: 47px;
+    font-size: 15px;
+    height: 22px;
+    padding: 0 1px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 12px;
+}
+
+.spanHold button {
+    background-color: rgb(24, 23, 23);
+    color: white;
+    display: inline;
+    font-weight: bold;
+    height: 22px;
+    border-radius:50% 50%;
+    border: none;
+}
+
+.spanHold button:hover {
+    opacity: 77%;
+    cursor: pointer;
+}

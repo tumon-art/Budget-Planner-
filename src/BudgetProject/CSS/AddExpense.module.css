@@ -1,0 +1,29 @@
+.form input {
+    width: 99%;
+    padding: 9px 0 9px 0;
+    margin: 5px;
+    border-radius: 7px;
+    border: 2px solid gray;
+    outline: none;
+    display: inline;
+}
+
+.form button {
+    margin: 1em 0 0 0 ;
+    background-color: rgb(17, 73, 226);
+    border: none;
+    padding: 10px 20px 10px 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.form button:hover {
+    opacity: 77%;
+    cursor: pointer;
+}
+
+.form label {
+    padding: 8px;
+    font-size: larger;
+    font-weight: bold;
+}
