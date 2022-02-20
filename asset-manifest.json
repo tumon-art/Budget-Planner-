@@ -1,22 +1,13 @@
 {
   "files": {
-    "main.css": "/Budget-Planner-/static/css/main.f3bb9e1e.chunk.css",
-    "main.js": "/Budget-Planner-/static/js/main.ac3a76d1.chunk.js",
-    "main.js.map": "/Budget-Planner-/static/js/main.ac3a76d1.chunk.js.map",
-    "runtime-main.js": "/Budget-Planner-/static/js/runtime-main.10f23cf0.js",
-    "runtime-main.js.map": "/Budget-Planner-/static/js/runtime-main.10f23cf0.js.map",
-    "static/js/2.cff06da6.chunk.js": "/Budget-Planner-/static/js/2.cff06da6.chunk.js",
-    "static/js/2.cff06da6.chunk.js.map": "/Budget-Planner-/static/js/2.cff06da6.chunk.js.map",
-    "static/js/3.5dce4c9a.chunk.js": "/Budget-Planner-/static/js/3.5dce4c9a.chunk.js",
-    "static/js/3.5dce4c9a.chunk.js.map": "/Budget-Planner-/static/js/3.5dce4c9a.chunk.js.map",
+    "main.css": "/Budget-Planner-/static/css/main.c4fe4b79.css",
+    "main.js": "/Budget-Planner-/static/js/main.3eb504cf.js",
     "index.html": "/Budget-Planner-/index.html",
-    "static/css/main.f3bb9e1e.chunk.css.map": "/Budget-Planner-/static/css/main.f3bb9e1e.chunk.css.map",
-    "static/js/2.cff06da6.chunk.js.LICENSE.txt": "/Budget-Planner-/static/js/2.cff06da6.chunk.js.LICENSE.txt"
+    "main.c4fe4b79.css.map": "/Budget-Planner-/static/css/main.c4fe4b79.css.map",
+    "main.3eb504cf.js.map": "/Budget-Planner-/static/js/main.3eb504cf.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.10f23cf0.js",
-    "static/js/2.cff06da6.chunk.js",
-    "static/css/main.f3bb9e1e.chunk.css",
-    "static/js/main.ac3a76d1.chunk.js"
+    "static/css/main.c4fe4b79.css",
+    "static/js/main.3eb504cf.js"
   ]
 }
