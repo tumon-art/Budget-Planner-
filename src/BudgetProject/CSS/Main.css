@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
 .main {
     height: auto;
     overflow: auto;
@@ -26,17 +32,32 @@
     repeat(3,minmax(100px,1fr));
 }
 
-.budgetStatus * {
+.budgetStatus :nth-child(1) {
     width: 70%;
     padding: 1.4em 1em 1.4em 1em;
     border-radius: 4px;
     box-shadow: 0px 0px 3px 1px rgb(3 153 255);
 }
 
+.budgetStatus :nth-child(2) {
+    width: 70%;
+    padding: 1.4em 1em 1.4em 1em;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px 1px rgb(50, 212, 10);
+}
+
+.budgetStatus :nth-child(3) {
+    width: 70%;
+    padding: 1.4em 1em 1.4em 1em;
+    border-radius: 4px;
+    box-shadow: 0px 0px 3px 1px rgb(6, 148, 243);
+}
+
 .budgetStatus .budget_not_editable {
     background-color: rgb(194, 216, 224);
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .budgetStatus .budget_editable{
@@ -100,34 +121,105 @@
     margin: 5px;
 }
 
+
+/* ExpensesList  */
+
+.ExpensesList {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* // Seract Input */
 .searchInputHold {
     width: 100%;
     display: flex;
     justify-content: center;
 }
 
+/* Sect2 */
+
+.Sect2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+/* Qoute Text */
+
+.qoute {
+    padding: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.qouteText {
+    font-size: 1rem;
+    border-left: 5px solid #0072cf;
+    font-weight: bolder;
+    padding: 4rem 2rem ;
+    font-family: 'Fjalla One', sans-serif;
+    align-self: flex-end;
+}
+
+
 @media only screen and (max-width: 850px) {
     .budgetStatus * {
         width: 100px;
         padding: 1.4em 1em 1.4em 1em;
     }
+
+    .budget_not_editable {
+        background-color: rgb(194, 216, 224);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .budget_not_editable button {
+        margin-top: 7px;
+    }
     .container h1 {
         display: block;
         text-align: center;
     }
+    .ExpensesList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .qouteText {
+
+        padding: 1rem 1rem ;
+  
+    }
+    
 }
 @media only screen and (max-width: 540px) {
     .budgetStatus {
-        display: grid;
-        justify-items: left;
-        grid-template-columns: 
-        repeat(1,minmax(240px,1fr));
+        display: block;
     }
-    .budgetStatus * {
-        
-        width: 90%;
+
+    
+    .budgetStatus :nth-child(1) {
+        width: 98%;
         padding: 1.4em 1em 1.4em 1em;
-        margin: 5px;
+        margin: 10px 5px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .budgetStatus :nth-child(2) {
+        width: 98%;
+        padding: 1.4em 1em 1.4em 1em;
+        margin: 10px 5px;
+    }
+
+    .budgetStatus :nth-child(3) {
+        width: 98%;
+        padding: 1.4em 1em 1.4em 1em;
+        margin: 10px 5px;
     }
     .container {
         overflow: hidden;
@@ -139,4 +231,13 @@
         display: block;
         text-align: center;
     }
+    .ExpensesList {
+        display: block;
+    }
+    .Sect2{
+        display: block;
+    }
+
+    
+    
 }

@@ -29,7 +29,7 @@ export const Budget = () => {
         {editClick ? (
         <div className='budget_editable'>
         <input value={editInp} onChange={e=>seteditInp(e.target.value)} 
-        type="number"/>
+        type="text"/>
 
         <button onClick={saveClick}> Save </button> </div>  )
         :

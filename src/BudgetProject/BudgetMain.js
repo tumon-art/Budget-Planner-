@@ -22,11 +22,31 @@ export const BudgetMain = () => {
                 <Remaining />
                 <Spent />
             </div>
+
+            <div className='Expense_and_AddExprense'>
+            <div className='Sect1'>
             <h3> Expenses</h3>
             <ExpensesList />
+            </div>
             
+            <div className="Sect2">
+            <div>
             <h3> Add Expenses </h3>
             <AddExpense />
+            </div>
+            <div className="qoute">
+                <div className="qouteText">
+                 " Everyday is a bank account, 
+                 and time is our currency.
+                 No one is rich, no one is poor, 
+                 we've got 24 hours each."
+                </div>
+            </div>
+
+            </div>
+            
+            </div>
+
             </Provider>
         </div>
         </div>
